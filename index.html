@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sahil Sait - Software Engineering and AI Research">
+  <title>ssait</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital@0;1&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'inter': ['Inter', 'sans-serif'],
+            'playfair': ['"Playfair Display"', 'serif'],
+            'code': ['"Source Code Pro"', 'monospace'],
+            'helvetica': ['Helvetica', 'Arial', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between font-helvetica">
+  <div class="flex-1 flex flex-col items-center justify-center w-full max-w-xl px-4 text-center">
+    <h1 class="text-3xl md:text-4xl font-bold my-4">Sahil Sait</h1>
+    <img src="./img/mood.JPG" alt="cool image" class="mx-auto my-4 max-w-xs w-full h-auto" />
+    <div class="flex flex-wrap justify-center gap-2 my-2 text-blue-700 underline">
+      <a href="mailto:sahilsaitn@gmail.com" target="_blank" rel="noopener noreferrer">sahilsaitn[at]gmail[dot]com</a>
+      <a href="https://github.com/sahilsait" target="_blank" rel="noopener noreferrer">github</a>
+      <a href="https://x.com/sahilsaitn" target="_blank" rel="noopener noreferrer">x</a>
+      <a href="https://www.linkedin.com/in/sahilsait/" target="_blank" rel="noopener noreferrer">linkedin</a>
+      <a href="https://drive.google.com/file/d/1fBVfJjwYFFw5aK9GeVMwjToBVs1twW_9/view" target="_blank" rel="noopener noreferrer">resume</a>
+    </div>
+    <p class="my-1">MS in Computer Science at SJSU [🎓 May 2026]</p>
+    <p class="my-1">I'm interested in AI and model performance research</p>
+    <p class="my-1">Incoming SDE intern @ Amazon, Seattle</p>
+  </div>
+  <footer class="w-full max-w-xl mx-auto text-center py-4 text-sm">
+    <em>"Do not go gentle into that good night. Rage, rage against the dying of the light."</em>
+  </footer>
+</body>
+</html>
