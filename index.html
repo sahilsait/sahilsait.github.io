@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sahil Sait - Software Engineering and AI Research">
-  <title>ssait</title>
+  <meta name="description" content="Software Engineering and AI Research">
+  <title>Sahil Sait</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital@0;1&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
@@ -16,34 +16,38 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            'inter': ['Inter', 'sans-serif'],
-            'playfair': ['"Playfair Display"', 'serif'],
-            'code': ['"Source Code Pro"', 'monospace'],
-            'helvetica': ['Helvetica', 'Arial', 'sans-serif'],
+          fontFamily: { 'helvetica': ['Helvetica', 'Arial', 'sans-serif']
           },
         },
       },
     }
   </script>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center font-helvetica">
-  <div class="flex-1 flex flex-col items-center justify-center w-full max-w-xl px-4 text-center">
-    <h1 class="text-3xl md:text-4xl font-bold my-4">Sahil Sait</h1>
-    <img src="./img/kayak.jpeg" alt="cool image" class="mx-auto my-4 max-w-xs w-full h-auto" />
-    <div class="flex flex-wrap justify-center gap-2 my-2 text-blue-700 underline">
-      <a href="mailto:sahilsaitn@gmail.com" target="_blank" rel="noopener noreferrer">sahilsaitn[at]gmail[dot]com</a>
-      <a href="https://github.com/sahilsait" target="_blank" rel="noopener noreferrer">github</a>
-      <a href="https://x.com/sahilsaitn" target="_blank" rel="noopener noreferrer">x</a>
-      <a href="https://www.linkedin.com/in/sahilsait/" target="_blank" rel="noopener noreferrer">linkedin</a>
-      <a href="https://drive.google.com/file/d/14MyX81vf32ODL9deOaODz_hlGfsWY0cy/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a>
+<body class="h-[100svh] overflow-hidden flex flex-col items-center justify-center font-helvetica">
+  <div class="flex-1 flex flex-col items-center justify-center w-full max-w-4xl px-4 text-center">
+    <h1 class="text-3xl md:text-4xl font-bold my-6">Hello, friend</h1>
+    <img src="./img/sf.jpeg" alt="cool image" class="mx-auto my-4 max-w-xs w-full h-auto rounded-lg" />
+    
+    <div class="max-w-2xl mx-auto">
+      <p class="my-2">My name is Sahil Sait.</p>
+      <p class="my-2">I grew up in Kerala 🥥🌴 and moved stateside in the Fall of 2024 to pursue<br> the American dream 🇺🇸.</p>
+      <p class="my-2">I spent the summer as an SDE intern at Amazon in the beautiful city of Seattle 🌆.</p>
+      <p class="my-2">Back in the Bay area 🌉 now, studying RL and AI inference infrastructure this Fall.</p>
+      <p class="my-2">I'm interested in the AI frontier, programmable money and eternal life.</p>
+      <div class="flex flex-wrap justify-center gap-2 my-2 text-blue-700 underline">
+        <a href="mailto:sahilsaitn@gmail.com" target="_blank" rel="noopener noreferrer">sahilsaitn[at]gmail[dot]com</a>
+        <a href="https://github.com/sahilsait" target="_blank" rel="noopener noreferrer">github</a>
+        <a href="https://x.com/sahilsaitn" target="_blank" rel="noopener noreferrer">x</a>
+        <a href="https://www.linkedin.com/in/sahilsait/" target="_blank" rel="noopener noreferrer">linkedin</a>
+        <a href="https://drive.google.com/file/d/14MyX81vf32ODL9deOaODz_hlGfsWY0cy/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a>
+      </div>
     </div>
-    <p class="my-1">MS in Computer Science @ San José State University [🎓 May 2026]</p>
-    <p class="my-1">Prev SDE intern @ Amazon [Summer 2025]</p>
-    <p class="my-1">I'm interested in LLM inference and multimodal routing</p>
   </div>
-  <footer class="w-full max-w-xl mx-auto text-center py-4 text-sm">
-    <em>"I am large, I contain multitudes - Walt Whitman"</em>
+  <footer class="w-full max-w-4xl mx-auto text-center py-8 text-sm">
+    <div class="space-y-2">
+      <p><em>"You are not a lottery ticket." - Peter Thiel</em></p>
+      <p><em>"He who jumps into the void owes no explanation to those who stand and watch." - Jean-Luc Godard</em></p>
+    </div>
   </footer>
 </body>
 <script src="script.js"></script>
