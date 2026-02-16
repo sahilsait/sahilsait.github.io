@@ -1,0 +1,29 @@
+# Sahil Sait
+
+> AI Software Engineer. MS CS candidate at San Jose State University, researching semantic routing for vision-language models. Previously SDE Intern at Amazon and Software Engineer at Amadeus IT Group. Based in San Jose, CA.
+
+## Contact
+
+- Email: sahilsaitn@gmail.com
+- GitHub: https://github.com/sahilsait
+- LinkedIn: https://www.linkedin.com/in/sahilsait/
+- X: https://x.com/sahilsaitn
+- Website: https://sahilsait.com
+
+## Current
+
+- MS in Computer Science at San Jose State University
+- Graduate Research: Semantic routing for vision-language models using VLM2Vec embeddings
+
+## Experience
+
+- **Amazon** — Software Development Engineer Intern. Built features for accounting automation team — backend services on AWS Lambda and DynamoDB, React/TypeScript frontends.
+- **Amadeus IT Group** — Software Engineer. Built observability infrastructure for distributed systems at global scale — platform reliability and monitoring.
+
+## Skills
+
+Python, Java, TypeScript, PyTorch, AWS, React, DynamoDB, Docker, Distributed Systems, Inference Optimization, Machine Learning
+
+## Interests
+
+AI Infrastructure, Inference Optimization, Semantic Routing, Vision-Language Models, VLM2Vec, CUDA Programming, Distributed Systems, Programmable Money, Longevity Research, Reinforcement Learning
