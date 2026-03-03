@@ -167,113 +167,16 @@
     opacity:0;animation:riseIn 1s ease forwards 0.7s;
   }
   .hero-sub strong{font-weight:600;color:white;font-style:normal}
-  .scroll-cue{
-    position:absolute;bottom:2.5vh;left:50%;transform:translateX(-50%);
-    display:flex;flex-direction:column;align-items:center;gap:0.5rem;
-    color:var(--text-dim);font-size:0.6rem;letter-spacing:0.25em;
-    text-transform:uppercase;animation:bobDown 2.5s ease-in-out infinite;
-  }
-  .scroll-cue .line{width:1px;height:32px;background:linear-gradient(to bottom,var(--gold),transparent)}
   @keyframes riseIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-  @keyframes bobDown{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
-
-  /* ===== STORY BLOCKS — float over the living background ===== */
-  .story{
-    position:relative;
-    padding:0 max(2rem,8vw);
-    padding-bottom:2vh;
-  }
-
-  .block{
-    position:relative;
-    max-width:560px;
-    margin-bottom:clamp(3rem,5vh,5rem);
-    opacity:0;transform:translateY(40px);
-    transition:opacity 1s cubic-bezier(0.25,1,0.5,1),transform 1s cubic-bezier(0.25,1,0.5,1);
-  }
-  .block.visible{opacity:1;transform:translateY(0)}
-  .block:last-child{margin-bottom:clamp(1rem,2vh,2rem)}
-
-  /* Alternating sides */
-  .block.right{margin-left:auto}
-
-  /* Dark cloud behind each block for readability */
-  .block::before{
-    content:'';position:absolute;
-    top:-3rem;left:-4rem;right:-4rem;bottom:-3rem;
-    background:radial-gradient(ellipse at center, rgba(11,16,24,0.88) 0%, rgba(11,16,24,0.6) 50%, transparent 75%);
-    border-radius:50%;z-index:-1;pointer-events:none;
-    filter:blur(20px);
-  }
-
-  /* Pull quote / statement style */
-  .block-statement{
-    font-family:'Playfair Display',Georgia,serif;
-    font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;
-    line-height:1.35;color:white;margin-bottom:1.2rem;
-    letter-spacing:-0.01em;
-  }
-  .block-statement em{font-style:italic;font-weight:400;color:var(--gold-light)}
-
-  .block-body{
-    font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-style:italic;
-    font-size:1.15rem;line-height:1.8;color:var(--text-muted);letter-spacing:0.01em;
-  }
-  .block-body strong{color:white;font-weight:600;font-style:normal}
-
-  /* Gold accent line above some blocks */
-  .block-accent{
-    width:40px;height:1px;background:var(--gold);margin-bottom:1.5rem;
-    opacity:0.6;
-  }
-
-
-  /* ===== CLOSING QUOTE ===== */
-  .closing-quote{
-    position:relative;
-    text-align:center;
-    max-width:900px;
-    margin:0 auto;
-    padding:1rem 2rem 0.5rem;
-    opacity:0;transform:translateY(40px);
-    transition:opacity 1s cubic-bezier(0.25,1,0.5,1),transform 1s cubic-bezier(0.25,1,0.5,1);
-  }
-  .closing-quote.visible{opacity:1;transform:translateY(0)}
-  .closing-quote::before{
-    content:'';position:absolute;
-    top:-2rem;left:-6rem;right:-6rem;bottom:-2rem;
-    background:radial-gradient(ellipse at center, rgba(11,16,24,0.85) 0%, rgba(11,16,24,0.5) 50%, transparent 75%);
-    border-radius:50%;z-index:-1;pointer-events:none;
-    filter:blur(20px);
-  }
-  .closing-quote blockquote{
-    font-family:'Playfair Display',Georgia,serif;
-    font-size:clamp(0.85rem,1.5vw,1rem);font-weight:400;font-style:italic;
-    line-height:1.5;color:var(--gold-light);margin-bottom:0.8rem;
-    white-space:nowrap;
-  }
-  @media(max-width:768px){
-    .closing-quote blockquote{white-space:normal}
-  }
-  .closing-quote cite{
-    font-family:'Cormorant Garabold',Georgia,serif;font-style:normal;
-    font-size:0.75rem;font-weight:500;letter-spacing:0.05em;
-    color:var(--text-dim);
-  }
 
 
 
   @media(max-width:900px){
-    .block{max-width:100%}
-    .block.right{margin-left:0}
     .nav-links a{padding:0.35rem 0.6rem;font-size:0.6rem}
   }
   @media(max-width:540px){
     .nav-links{gap:0.3rem}
     .nav-links a{padding:0.3rem 0.55rem;font-size:0.58rem}
-    .block::before{
-      left:-2rem;right:-2rem;top:-2rem;bottom:-2rem;
-    }
   }
 </style>
 </head>
@@ -295,38 +198,12 @@
   <section class="hero" role="banner">
     <header>
       <div class="hero-name-big">Sahil Sait</div>
-      <h1>The exponential is here.<br><em>I'm building on it.</em></h1>
+      <h1><em>Shipping software at the speed of AI</em></h1>
       <p class="hero-sub">
-        <strong>AI software engineer</strong>. MS CS at <strong>SJSU</strong>. Previously <strong>Amazon</strong>.
+        MS CS at <strong>SJSU</strong>. Previously <strong>Amazon, Amadeus</strong>.
       </p>
     </header>
-    <div class="scroll-cue"><div class="line"></div>Explore</div>
   </section>
-
-  <main class="story" role="main">
-
-    <article class="block">
-      <div class="block-accent"></div>
-      <div class="block-statement">I moved halfway across the world <em>to bet on the future</em></div>
-      <div class="block-body">I grew up in <strong>Kerala, India</strong> and came to the Bay Area because I believe we're living through the most transformative moment in human history — the arrival of AGI. I studied CS not to watch it happen but to be part of it. The money matters too, I won't pretend otherwise. But what really drives me is the conviction that what's being created right now will reshape everything.</div>
-    </article>
-
-    <article class="block right">
-      <div class="block-accent"></div>
-      <div class="block-statement">I build things <em>to understand them</em></div>
-      <div class="block-body">My first job out of college was at <strong>Amadeus</strong> — observability infrastructure, distributed systems, the kind of work that teaches you how things break at scale. A year later I interned at <strong>Amazon</strong>, building features for the accounting automation team. Now I'm wrapping up my MS at <strong>SJSU</strong>, writing my thesis on how to route queries to the right model at the right cost. I vibe-code. I try every new tool the week it drops. This is the fork in the road. I know which side I'm on.</div>
-    </article>
-
-  </main>
-
-  <footer style="position:relative;text-align:center;padding:1rem 2rem 1.2rem;font-family:'Cormorant Garamond',Georgia,serif;">
-    <div style="position:absolute;top:0;left:10%;right:10%;height:1px;background:linear-gradient(to right,transparent,rgba(232,168,56,0.2),transparent);"></div>
-    <div style="font-family:'Playfair Display',Georgia,serif;font-size:0.9rem;font-style:italic;color:var(--gold-light);margin-bottom:0.3rem;">
-      "The only way to do great work is to love what you do."
-    </div>
-    <div style="font-size:0.75rem;color:var(--text-dim);letter-spacing:0.05em;">— Steve Jobs</div>
-  </footer>
-
 
 
 </div>
@@ -398,22 +275,12 @@ function renderGL(){
 renderGL();
 document.addEventListener('mousemove',e=>{tmxGL=e.clientX/window.innerWidth;tmyGL=e.clientY/window.innerHeight});
 
-// Dim the background as you scroll — but never fully kill it
-window.addEventListener('scroll',()=>{
-  const progress=Math.min(1,window.scrollY/(window.innerHeight*0.8));
-  dimTarget=progress;
-});
 
 // ============ Nav ============
 const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>80)});
 
 
-// ============ Scroll reveal ============
-const obs=new IntersectionObserver(en=>{
-  en.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
-},{threshold:0.15,rootMargin:'0px 0px -60px 0px'});
-document.querySelectorAll('.block,.closing-quote').forEach(el=>obs.observe(el));
 </script>
 </body>
 </html>
