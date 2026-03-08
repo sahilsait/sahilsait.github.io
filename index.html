@@ -86,7 +86,8 @@
     --text:rgba(255,255,255,0.92);--text-dim:rgba(255,255,255,0.4);--text-muted:rgba(255,255,255,0.6);
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  html{font-size:16px;scroll-behavior:smooth}
+  html{font-size:16px}
+  html,body{overflow:hidden;height:100%}
   body{
     background:var(--night);color:var(--text);
     font-family:'Outfit',sans-serif;font-weight:400;
@@ -101,11 +102,6 @@
     transition:background 0.5s,backdrop-filter 0.5s,border-color 0.5s;
     border-bottom:1px solid transparent;
   }
-  .nav.scrolled{
-    background:rgba(11,16,24,0.7);
-    backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-    border-bottom:1px solid var(--border);
-  }
   .nav-links{display:flex;gap:0.5rem;list-style:none}
   .nav-links a{
     font-size:0.72rem;font-weight:500;letter-spacing:0.08em;
@@ -114,7 +110,6 @@
     border:1px solid rgba(255,255,255,0.18);border-radius:100px;
     transition:all 0.3s;background:rgba(255,255,255,0.05);
   }
-  .nav.scrolled .nav-links a{border-color:rgba(255,255,255,0.12);background:rgba(255,255,255,0.04)}
   .nav-links a:hover{
     color:var(--gold);border-color:var(--border-hover);
     background:rgba(232,168,56,0.06);box-shadow:0 0 20px rgba(232,168,56,0.08);
@@ -275,11 +270,11 @@ function renderGL(){
 }
 renderGL();
 document.addEventListener('mousemove',e=>{tmxGL=e.clientX/window.innerWidth;tmyGL=e.clientY/window.innerHeight});
+document.addEventListener('touchmove',e=>{const t=e.touches[0];tmxGL=t.clientX/window.innerWidth;tmyGL=t.clientY/window.innerHeight},{passive:true});
 
 
 // ============ Nav ============
 const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>80)});
 
 
 </script>
